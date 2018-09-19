@@ -21,7 +21,7 @@ service hhvm restart
 
 
 ## AutoRestart and AutoUpdate for HHVM
-`monitoring.sh` checks `127.0.0.1:80/hhvm/ping.php` every minute  
+`monitoring.sh` checks `127.0.0.1:80/hhvm/ping.php` every minute(and restart service if HHVM down)  
 `update.sh` checks HHVM updates every 7 days
 #### 1. Copy `monitoring.sh` and `update.sh` to `\etc\hhvm\` from rep
 #### 2. Copy `ping.php` to `\var\www\hhvm\` from rep
