@@ -30,6 +30,7 @@ service hhvm restart
 apt-get install -y wget
 chmod +x /etc/hhvm/monitoring.sh
 chmod +x /etc/hhvm/update.sh
+chown -R www-data:www-data /var/www
 crontab -e
 ```
 #### 4. Add to end of cron config
